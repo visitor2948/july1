@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Your_Friend_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="us2-pG-CXg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Your Friend" id="6bR-zK-aaL">
+                                        <barButtonItem key="leftBarButtonItem" title="Hi" id="FfA-gi-V19">
+                                            <connections>
+                                                <action selector="hi:" destination="BYZ-38-t0r" id="FQ8-Dj-Wch"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Bye" id="rTm-7f-ox3">
+                                            <connections>
+                                                <action selector="bye:" destination="BYZ-38-t0r" id="wlV-pV-WIK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-S9-dE3">
+                                <rect key="frame" x="0.0" y="812" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5s5-X4-KhN"/>
+                                    <barButtonItem title="Reset" id="z64-PG-Vi1">
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" id="Vy0-Kf-yhV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Hh3-QF-CVy"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="welcome weary traveler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFe-st-cWJ">
+                                <rect key="frame" x="40" y="351" width="334" height="195"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="us2-pG-CXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Or-lI-5lY"/>
+                            <constraint firstItem="ceQ-S9-dE3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9cM-P8-Kvk"/>
+                            <constraint firstItem="FFe-st-cWJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AkN-gR-SAm"/>
+                            <constraint firstItem="us2-pG-CXg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B7u-7Q-tTP"/>
+                            <constraint firstItem="ceQ-S9-dE3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CBw-rY-JyL"/>
+                            <constraint firstItem="FFe-st-cWJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="RmW-hM-naj"/>
+                            <constraint firstItem="FFe-st-cWJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V3M-mq-oFu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ceQ-S9-dE3" secondAttribute="bottom" constant="6" id="WMD-MT-PXO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ceQ-S9-dE3" secondAttribute="bottom" constant="6" id="XE2-8O-CS2"/>
+                            <constraint firstItem="FFe-st-cWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dLT-pW-uLW"/>
+                            <constraint firstItem="FFe-st-cWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPA-zQ-qN7"/>
+                            <constraint firstItem="FFe-st-cWJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o4D-dX-EHd"/>
+                            <constraint firstItem="us2-pG-CXg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="owE-x2-Ce3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="message" destination="FFe-st-cWJ" id="zwy-fb-ixG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+</document>
